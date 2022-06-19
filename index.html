@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,62 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="content">
+        <div class="left-side">
+            <div class="left-upper">
+                <div class="logo">
+                    <img src="img/odin-lined.png" alt="odin-logo">
+                    Odin
+                </div>
+            </div>
+            <div class="copyright">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                    href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+                </div>
+        </div>
+        <div class="main-part">
+            <form action="#" method="post">
+                <section>
+                    <ul>
+                        <li>
+                            <label for="name">First name:</label>
+                            <input type="text" id="name" name="first_name" />
+                        </li>
+                        <li>
+                            <label for="surname">Last name:</label>
+                            <input type="text" id="surname" name="last_name" />
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" />
+                        </li>
+                        <li>
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password">
+                        </li>
+                        <li>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password">
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p>
+                        <button type="submit">Create Account</button>
+                    </p>
+                </section>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
