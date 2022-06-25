@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .content {
@@ -17,10 +18,12 @@
     flex-grow: 5;
     display: flex;
     flex-direction: column;
+    flex-basis: 0;
 }
 
 .main-part {
     flex-grow: 8.5;
+    flex-basis: 0%;
 }
 
 .left-side {
@@ -52,7 +55,6 @@
 }
 
 .copyright, a {
-    font-family: sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -60,3 +62,108 @@
 .left-upper {
     flex-grow: 1;
 }
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.disclaimer, 
+.you-know {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 80%;
+    padding-left: 48px;
+}
+
+.you-know {
+    margin: 32px 0 64px;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 64px;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 8px;
+    margin-bottom: 4px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+ul:nth-of-type(2n) {
+    margin: 24px 0;
+}
+
+h2 {
+    color: #182635;
+    font-size: 18px;
+    padding: 24px 0;
+}
+
+.lets-do-this{
+    padding-bottom: 40px;
+    background-color: #ffffff;
+    padding-left: 48px;
+    margin-bottom: 36px;
+    box-shadow: 0 5px 10px #dbdbdc;
+}
+
+button {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 18px 55px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #596D48;
+    margin-left: 48px;
+    box-shadow: 3px 3px 6px #dcddde;
+}
+
+input {
+    border-radius: 3px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-width: 1px;
+    width: 260px;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+.have-account {
+    font-size: 14px;
+    margin: 36px 0 0 48px;
+}
+
+span {
+    color: #596D48;
+    font-weight: bolder;
+}
+
+input:focus {
+    border-color: #0065de;
+    box-shadow: 3px 3px 6px #dcddde;
+    outline-style: none;
+}
+
+.error {
+    border-color: #ff0000;
+}
+
+.passwords-match{
+    color: #ff0000;
+    font-size: 8px;
+}
+

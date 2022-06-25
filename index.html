@@ -13,18 +13,27 @@
     <div class="content">
         <div class="left-side">
             <div class="left-upper">
-                <div class="logo">
+                <h1 class="logo">
                     <img src="img/odin-lined.png" alt="odin-logo">
                     Odin
-                </div>
+                </h1>
             </div>
             <div class="copyright">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
                     href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
-                </div>
+            </div>
         </div>
         <div class="main-part">
+
+            <p class="disclaimer">
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p class="you-know">
+                You <em>know</em> you want to.
+            </p>
             <form action="#" method="post">
-                <section>
+                <section class="lets-do-this">
+                    <h2>Let's do this!</h2>
                     <ul>
                         <li>
                             <label for="name">First name:</label>
@@ -48,20 +57,21 @@
                     <ul>
                         <li>
                             <label for="password">Password:</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password"  class="error">
+                            <div hidden class="passwords-match">*Passwords do not match</div>
                         </li>
                         <li>
                             <label for="password">Password:</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" class="error">
                         </li>
                     </ul>
                 </section>
                 <section>
-                    <p>
-                        <button type="submit">Create Account</button>
-                    </p>
+                    <button type="submit">Create Account</button>
+                    <p class="have-account">Already have an account? <span>Log in</span></p>
                 </section>
             </form>
+
         </div>
     </div>
 </body>
